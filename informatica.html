@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.V Informatica</title>
+    <script src="https://kit.fontawesome.com/8dd92a9059.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.ico" /> 
+    <style>
+   * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif; /* Tipografía profesional */
+    }
+
+    .contenedor {
+        display: flex;
+        width: 100%;
+        min-height: 100vh; /* Asegura que ocupe toda la pantalla */
+    }
+
+    .columna_1 {
+        width: 35%;
+        background-color: #2d3436; /* Gris oscuro elegante */
+        padding: 30px;
+        color: #dfe6e9; /* Texto claro */
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    }
+
+    .columna_2 {
+        width: 65%;
+        background-color: #d3d3d3; /* Fondo claro y limpio */
+        padding: 40px;
+        color: #2d3436; /* Texto oscuro */
+    }
+
+    /* Estilo para todos los h2 */
+    h2 {
+        text-align: center;
+        margin: 20px 0; /* Margen superior e inferior para todos los h2 */
+        font-size: 28px;
+        text-transform: uppercase; /* Mayúsculas para destacar */
+        letter-spacing: 1px; /* Espaciado entre letras */
+    }
+
+    .columna_1 h2 {
+        color: #74b9ff; /* Azul claro para los títulos en la columna 1 */
+    }
+
+    .columna_2 h2 {
+        color: #0984e3; /* Azul más intenso para la columna 2 */
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 48px;
+        color: #2d3436;
+        margin-bottom: 20px;
+    }
+
+    #foto {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: 0 auto 20px; /* Margen inferior para separación */
+        border: 5px solid #74b9ff; /* Borde azul claro */
+    }
+
+    hr {
+        border: none;
+        height: 1px;
+        background-color: #dfe6e9;
+        margin: 20px 0; /* Separación consistente */
+    }
+
+    #sobre_mi, #habilidades {
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.5; /* Mayor legibilidad */
+        margin-bottom: 15px;
+    }
+
+    ul {
+        list-style: none; /* Sin viñetas por defecto */
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
+    .columna_1 ul li {
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    .columna_1 ul li:before {
+        content: "•"; /* Viñeta personalizada */
+        color: #74b9ff;
+        position: absolute;
+        left: -15px;
+    }
+
+    .columna_2 ul li {
+        margin-bottom: 15px;
+    }
+
+    #barra_habilidades {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    progress {
+        width: 80%;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #dfe6e9;
+    }
+
+    progress::-webkit-progress-value {
+        background-color: #74b9ff; /* Color de la barra de progreso */
+        border-radius: 5px;
+    }
+
+    progress::-moz-progress-bar {
+        background-color: #74b9ff;
+        border-radius: 5px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .contenedor {
+            flex-direction: column;
+        }
+        .columna_1, .columna_2 {
+            width: 100%;
+            padding: 20px;
+        }
+        #foto {
+            width: 150px;
+            height: 150px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        h2 {
+            font-size: 24px;
+            margin: 15px 0; /* Margen ajustado para pantallas pequeñas */
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="columna_1">
+            <img id="foto" src="foto_cv.jpg"
+            <br>
+            <hr>
+            <h2>CONTACTO</h2>
+            <br>
+            <i class="fa-solid fa-at">   alejandrosanahujabenitez@gmail.com</i>    
+            <br>
+            <br>
+            <i class="fa-solid fa-phone">   651557528</i> 
+            <br>
+            <br>
+            <i class="fa-solid fa-location-dot">   Castellon de la plana</i>
+            <br>
+            <br>
+            <hr>
+            <h2>SOBRE MI</h2>
+            <br>
+            <p id="sobre_mi">Mi experiencia laboral se centra
+                en el ámbito de informática
+                telecomunicaciones.</p> 
+                <br>
+                <p id="sobre_mi">Soy una persona inquieta en el
+                    mundo laboral en busca de
+                    nuevos proyectos personales,
+                    tengo buena capacidad para
+                    trabajar en grupo y aprendo
+                    rápido</p>  
+                    <br>
+                <hr>
+                <h2>OTROS</h2> 
+                <ul>
+                    <li>Activo</li>
+                    <li>Trabajo en equipo o individual</li>
+                    <li>Inscrito en garantia juvenil</li>
+                </ul>
+                <br>
+                <hr>
+                <h2>IDIOMAS</h2>
+                <ul>
+                    <li>Español: Nativo</li>
+                    <li>Ingles: B1</li>
+                </ul>
+                <br>
+                <hr>
+                <h2>HABILIDADES</h2>
+                <br>
+                <p id="habilidades">Microsoft Office</p>
+                <div id="barra_habilidades">
+                <progress  max="100" value="62"></progress>
+                </div>
+                <br>
+                <p id="habilidades">Canva</p>
+                <div id="barra_habilidades">
+                <progress  max="100" value="55"></progress>
+                </div>      
+                <br>
+                <p id="habilidades">Sistemas operativos Ubuntu/Window<p>
+                <div id="barra_habilidades">
+                <progress  max="100" value="74"></progress>
+                </div>
+                <br>
+                <p id="habilidades">Montaje de redes</p>
+                <div id="barra_habilidades">
+                <progress  max="100" value="70"></progress>
+                </div>
+                <br>
+                <p id="habilidades">Google Apps</p>
+                <div id="barra_habilidades">
+                <progress  max="100" value="65"></progress>
+                </div>
+                <br>
+        </div>
+        <div class="columna_2">
+            <h1>Alejandro Sanahuja Benitez</h1>
+            <br>
+            <hr>
+            <h2>ESTUDIOS</h2>
+            <ul class="ul_estudios">
+            <li><b>Exel avanzado y power BI</b>-2024 Área Formación y consultores (150horas)</li>
+            <br>
+            <li><b>Competencias Digitales Avanzadas</b>-2024 Área Formación y consultores (60 horas)</li>
+            <br>
+            <li><b>Competencias Digitales Basicas</b>-2024 Área Formación y consultores (60 horas) </li>
+            <br>
+            <li><b>FPB básica Informática y telecomunicaciones</b>I.E.S. Vicent Castell y Doménech 2018-2019</li>
+            <br>
+            <li><b>ESO I.E.S</b>Vicent Castell y Doménech 2018-2019</li>
+            <br>
+            <li><b>Ofimática nivel intermedio</b> (90 horas) I.E.S. Vicent Castell y Doménech 2018-2019</li>
+            </ul>
+            <hr>
+            <h2>EXPERIENCIAS</h2>
+            <ul class="ul_experiencias">
+                <li><b>Mantenimiento de instalaciones de equipos
+                    informáticos</b> - PNL Formación Profesional Básica
+                    Informática y Comunicación, I.E.S. Vicent Castell y
+                    Doménech -2019</li>
+            </ul>
+        </div>
+    </div>
+   
+</body>
+</html>
